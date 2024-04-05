@@ -1,0 +1,19 @@
+h4{
+    color: yellowgreen;
+    font-size: 80px;
+}
+/* Teste de CSS - Box Model */
+#box-model{
+    background-color: black;
+    color: brown;
+    width: 100px;
+    height: 200px;
+    margin: 10px 30px;
+    padding: 20px;
+    border: 5px solid skyblue;
+    outline: 15PX solid rgb(3, 105, 80);
+    text-align: center;
+}
+.txt-box-model{
+    color: aqua;
+}

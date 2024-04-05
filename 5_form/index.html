@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h2>Formulários HTML</h2>
+    <!-- 1 - Primeiro formulário -->
+    <!-- 2 - Atributos do formulário -->
+    <form action="register.php" method="GET">
+        <div>
+            <label for="">Nome:</label>
+            <input type="text">
+        </div>
+        <!-- 3 - Atributo name -->
+        <div>
+            <!-- 4 - Atributo label -->
+            <label for="age">Idade:</label>
+            <input type="text" name="age">
+        </div>
+        <div>
+            <label for="job">Selecione a sua profissão:</label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="tester">Tester/QA</option>
+                <option value="devops">DecOps</option>
+            </select>
+        </div>
+            <!-- 7 - Atributo Selected -->
+        <div>  
+            <label for="contract">Você leu os termos do contrato?</label>
+            <select name="contract">
+                <option value="sim">sim</option>
+                <option value="não" selected>Não</option>
+            </select>
+        </div>
+            <!-- 11 - datalist -->
+        <div>
+            <label for="flavor">Escolha o sabor:</label>
+            <input type="text" list="flavors" name="flavor">
+
+            <datalist id="flavors">
+                <option value="Cereja"></option>
+                <option value="Morango"></option>
+                <option value="Abacaxi"></option>
+                <option value="Chocolate"></option>
+            </datalist>
+        </div>
+        <!-- 14 - radio button -->
+        <div>
+            <label for="car_model">Escolha o modelo do seu carro:</label>
+            <div class="radio">
+                <input type="radio" value="bmw" name="car_model">
+                <label for="bmw">BMW</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="porsche" name="car_model">
+                <label for="porsche">Porsche</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="ferrari" name="car_model">
+                <label for="ferrari">ferrari</label>
+            </div>
+        </div>
+        <!-- 17 - Enviar arquivo -->
+        <div>
+            <label for="image">Insira a sua imagem: </label>
+            <input type="file" name="iamge">
+        </div>
+        <!-- 20 - Required -->
+        <div>
+            <label for="birthyear">Ano do nascimento:</label>
+            <input type="text" placeholder="Ano em que nasceu" required>
+        </div>
+        <!-- 5 - Envio de form -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
